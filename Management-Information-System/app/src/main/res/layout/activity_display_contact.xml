@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    tools:context=".DisplayContact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#009cfaf1"
+    android:orientation="vertical">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textSize="25dp"
+            android:id="@+id/position"
+
+            />
+
+
+
+        <EditText
+            android:id="@+id/data_roll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="140dp"
+            android:ems="4"
+            android:inputType="phone|text"
+ />
+
+
+
+
+
+        <TextView
+
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Price"
+
+            android:id="@+id/ct1"
+            android:layout_below="@+id/position"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/WebLink"
+            android:layout_marginTop="135dp"
+            android:layout_marginLeft="140dp"
+            android:layout_below="@+id/button"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_below="@+id/position"
+            android:id="@+id/data_ct1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="140dp"
+            android:ems="4"
+            android:inputType="phone|text" />
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Sell"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="140dp"
+            android:onClick="CGPA"
+            android:layout_below="@+id/data_ct1"
+            android:id="@+id/cgpa"
+
+ />
+
+        <TextView
+            android:layout_below="@+id/data_ct1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/data_cgpa"
+            android:text=" 0.0"
+            android:textSize="25dp"
+            android:onClick="CGPA"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="250dp"
+
+ />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Back"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="140dp"
+            android:id="@+id/bButton"
+            android:layout_below="@+id/data_ct1"
+            android:onClick="back"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="70dp"
+            android:onClick="total"
+            android:id="@+id/button2"
+            android:layout_below="@+id/data_ct1"
+ />
+
+</RelativeLayout>
